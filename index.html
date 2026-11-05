@@ -5,13 +5,16 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧟%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head><body>
-<div id="stage"><canvas id="c" width="700" height="700"></canvas><div id="pop"></div></div>
+<div id="stage"><canvas id="c" width="700" height="700"></canvas><div id="pop"></div>
+<div id="menu"><h2>🧟 ZOMBIE DEFENSE</h2><p>플레이 방식을 골라 주세요</p>
+<button id="m1">🤖 솔로 플레이<br><small>P2가 자동으로 조준·사격 · 시작 골드 +80</small></button>
+<button id="m2">👥 멀티 플레이<br><small>두 명이 P1 / P2를 직접 조작</small></button></div></div>
 <div id="p">
 <h1>🧟 ZOMBIE DEFENSE</h1>
 <div id="hud"></div><div id="bar"><div id="bf"></div></div><div id="msg"></div>
-<button id="go"></button>
-<h3>경비원</h3><button id="gb"></button>
-<small>🖱 플레이어나 경비원을 <b>클릭</b>하면 강화 버튼이 떠요.<br>P1(파랑): A / D 로 조준 회전<br>P2(주황): ← / → 로 조준 회전<br>경비원은 길 옆에만 설치할 수 있어요. (Esc / 우클릭: 취소)<br>좀비는 기지 반대쪽(위·좌·우)에서 몰려와 입구로 들어가요.</small>
+<button id="go"></button><button id="mb">🔄 모드 선택으로</button>
+<h3>포탑</h3><button id="gb"></button>
+<small>🖱 플레이어나 포탑을 <b>클릭</b>하면 강화 버튼이 떠요.<br>P1(파랑): A / D 로 조준 (솔로에서는 ← / → 도 가능)<br>P2(주황): ← / → 로 조준 (솔로에서는 자동)<br>키를 오래 누를수록 조준이 빨라지고, 살짝 누르면 미세 조정돼요<br>포탑은 길 옆에만 설치할 수 있어요. (Esc / 우클릭: 취소)<br>🌤 30초마다 날씨가 바뀌어요: 맑음 / 흐림(시야·사거리↓) / 바람(총알이 휨)<br>좀비는 기지 반대쪽(위·좌·우)에서 몰려와 입구로 들어가요.</small>
 </div>
 <script src="game.js"></script>
 </body></html>
