@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>좀비 디펜스</title>
+<meta name="description" content="2인 협동 좀비 디펜스 게임 - 기지를 지켜라!">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧟%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div id="stage"><canvas id="c" width="700" height="700"></canvas><div id="pop"></div></div>
+<div id="p">
+<h1>🧟 ZOMBIE DEFENSE</h1>
+<div id="hud"></div><div id="bar"><div id="bf"></div></div><div id="msg"></div>
+<button id="go"></button>
+<h3>경비원</h3><button id="gb"></button>
+<small>🖱 플레이어나 경비원을 <b>클릭</b>하면 강화 버튼이 떠요.<br>P1(파랑): A / D 로 조준 회전<br>P2(주황): ← / → 로 조준 회전<br>경비원은 길 옆에만 설치할 수 있어요. (Esc / 우클릭: 취소)<br>좀비는 기지 반대쪽(위·좌·우)에서 몰려와 입구로 들어가요.</small>
+</div>
+<script src="game.js"></script>
+</body></html>
