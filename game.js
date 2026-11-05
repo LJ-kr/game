@@ -103,7 +103,9 @@ function upd(dt){
    if(Math.hypot(z.x-b.x,z.y-b.y)<1.9){b.hit.add(z);hurt(z,b.dmg);if(--b.pr<=0){b.d=1e9;break}}}});
  st.b=st.b.filter(b=>b.d<BR&&b.x>-3&&b.x<103&&b.y>-3&&b.y<103);
  // 경비원
- st.gd.forEach(o=>{o.t-=dt;let t=null,m=GR+2*o.up.rng;for(const z of st.z){if(z.dead)continue;const d=Math.hypot(z.x-o.x,z.y-o.y);if(d<m){m=d;t=z}}
+ st.gd.forEach(o=>{o.t-=dt;let t=null,m=1e9;const rg=GR+2*o.up.rng;
+  for(const z of st.z){if(z.dead||Math.hypot(z.x-o.x,z.y-o.y)>rg)continue;
+   const r=z.road?TOT-z.s:TOT+Math.hypot(z.x-E[0],z.y-E[1]);if(r<m){m=r;t=z}}
   if(t)o.a=Math.atan2(t.y-o.y,t.x-o.x);
   if(o.t>0||!t)return;
   hurt(t,4+2*o.up.dmg);st.fx.push({l:[o.x,o.y,t.x,t.y],t:.1});o.t=Math.max(.15,1.5*.88**o.up.rate)});
